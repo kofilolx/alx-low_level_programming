@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- * Main -
+ * main - Entry point
  *
- * Always return 0 (Success)
- *
- */
+ * Return: Always 0 (Success)
+*/
 int main(void)
 {
 	char alp;
