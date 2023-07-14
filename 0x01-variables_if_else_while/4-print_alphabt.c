@@ -10,15 +10,14 @@ int main(void)
 	/* Initialization of character */
 	char alphabet_val = 'a';
 
-	/* While loop - start */
-	while (alphabet_val <= 'z')
+	/* For loop - start */
+	for (alphabet_val = 'a'; alphabet_val <= 'z'; alphabet_val++)
 	{
 		if (alphabet_val == 'e')
 			continue;
 		if (alphabet_val == 'q')
 			continue;
 		putchar(alphabet_val);
-		alphabet_val++;
 	}
 	putchar('\n');
 	return (0);
