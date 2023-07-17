@@ -1,10 +1,10 @@
 # Variables and Conditional Statement
-- -Conditional statement
-	If Statements
-	If-else Statements
-	While Statement
+- Conditional statement
+  	- If Statements
+	- else if Statements
+	- While Statement
 
-- -Variables
+- Variables
 	Datatypes
 	- int
 	- float

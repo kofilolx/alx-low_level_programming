@@ -8,30 +8,27 @@
  */
 int main(void)
 {
-	int c;
-	int d = 0;
+	char i,j,k;
 
-	while (d < 10)
-	{
-		c = 0;
-		while (c < 10)
-		{
-			if (d != c && d < c)
-			{
-				putchar('0' + d);
-				putchar('0' + c);
+        for (i = 0; i <= 9; i++)
+        {
+                for (j = 0 ; j <= 9; j++)
+                {
+                        if (i != j && i < j)
+                        {
+                                putchar('0' + i);
+                                putchar('0' + j);
 
-				if (c + d != 17)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
+                                if ( i || j != 99)
+                                {
+                                        putchar(',');
+                                        putchar(' ');
+                                }
+                        }
 
-			c++;
-		}
-		d++;
-	}
-	putchar('\n');
-	return (0);
+                }
+        }
+        putchar('\n');
+        return (0);
+
 }
