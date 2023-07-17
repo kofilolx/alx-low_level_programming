@@ -13,9 +13,7 @@ int main(void)
 	/* For loop - start */
 	for (alphabet_val = 'a'; alphabet_val <= 'z'; alphabet_val++)
 	{
-		if (alphabet_val == 'e')
-			continue;
-		if (alphabet_val == 'q')
+		if (alphabet_val == 'e' || alphabet_val == 'q')
 			continue;
 		putchar(alphabet_val);
 	}
