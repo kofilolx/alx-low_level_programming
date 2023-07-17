@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - Entry point
  * Description : Write a program that prints all possible diferent
@@ -12,37 +11,33 @@
 
 int main(void)
 {
-	int c;
-	int d;
-	int e = 0;
+        int c, d;
+        int e = 0;
 
-	while (e < 10)
-	{
-		d = 0;
-		while (d < 10)
-		{
-			c = 0;
-			while (c < 10)
-			{
-				if (c != d && d != e && e < d && d < c)
-				{
-					putchar('0' + e);
-					putchar('0' + d);
-					putchar('0' + c);
+        while (e < 10)
+        {
+                d = e + 1;
 
-					if (c != 9 || d != 8 || e != 7)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+                while (d < 10)
+                {
+                        c = d + 1;
 
-				c++;
-			}
-			d++;
-		}
-		e++;
-	}
-	putchar('\n');
-	return (0);
+                        while (c < 10)
+                        {
+                                putchar(e + '0');
+                                putchar(d + '0');
+                                putchar(c + '0');
+                                if (c != 9 || d != 8 || e != 7)
+                                {
+                                        putchar(',');
+                                        putchar(' ');
+                                }
+                                c++;
+                        }
+                        d++;
+                }
+                e++;
+        }
+        putchar('\n');
+        return (0);
 }
