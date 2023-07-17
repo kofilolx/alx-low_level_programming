@@ -11,7 +11,7 @@ int main(void)
 	char alphabet_val = 'a';
 
 	/* For loop - start */
-	for (alphabet_val = 'a'; alphabet_val <= 'z'; alphabet_val++)
+	for (; alphabet_val <= 'z'; alphabet_val++)
 	{
 		if (alphabet_val == 'e' || alphabet_val == 'q')
 			continue;
