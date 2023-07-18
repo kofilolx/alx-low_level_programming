@@ -1,25 +1,24 @@
-#include <main.h>
+#include "main.h"
 
 /**
- * main : A program that prints _putchar
+ * main - A program that prints _putchar
  *
  * Description: _putchar as output only
  *
- * Return: Always 0 
+ * Return: Always 0 (Sucess)
  */
 
 int main(void)
 {
 	/* Array declaration */
-	char ar[] = '_putchar';
+	char a[] = "_putchar";
 	int i = 0;
 
 	/* For loop to read array */
-	for (; i < sizeof(ar); i++)
+	for (; i < 9; i++)
 	{
-		_putchar(ar[i]);
+		_putchar(a[i]);
 	}
-	_putchar("\n");
+	_putchar('\n');
 	return (0);
 }
-
