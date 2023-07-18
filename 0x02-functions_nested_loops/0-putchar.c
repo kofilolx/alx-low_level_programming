@@ -11,13 +11,13 @@
 int main(void)
 {
 	/* Array declaration */
-	char a[] = "_putchar";
+	char arr[] = "_putchar";
 	int i = 0;
 
 	/* For loop to read array */
 	for (; i < 9; i++)
 	{
-		_putchar(a[i]);
+		_putchar(arr[i]);
 	}
 	_putchar('\n');
 	return (0);
