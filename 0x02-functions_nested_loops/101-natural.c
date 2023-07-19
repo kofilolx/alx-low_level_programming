@@ -7,14 +7,14 @@
  */
 int main(void)
 {
-	int n;
+	int j;
 	int sum = 0;
 
-	for (n = 0; n < 1024; n++)
+	for (j = 0; j <= 1023; j++)
 	{
-		if (n % 3 == 0 || n % 5 == 0)
+		if (j % 3 == 0 || j % 5 == 0)
 		{
-			sum += n;
+			sum += j;
 		}
 	}
 	printf("%d\n", sum);
