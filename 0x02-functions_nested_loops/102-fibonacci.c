@@ -25,10 +25,10 @@ int main(void)
 	/* Printing fib seq to console */
 	for (i = 0; i <= 49; i++)
 	{
-		if (i != 20365011074)
+		if (arr[i] != 20365011074)
 			printf("%ld, ", arr[i]);
 		else
-			printf("ld", arr[i]);
+			printf("%ld", arr[i]);
 	}
 	putchar('\n');
 	return (0);
