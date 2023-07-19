@@ -1,30 +1,17 @@
 #include "main.h"
 
 /**
- * _abs - A function the prints absolute value of an integer
- * Description: This function checks whether the given integer 'n'
- * is a sign of a number.
- * It returns 1 if the character is lowercase,and 0 otherwise.
- *
- * @c: The character to be checked
- *
- * Return: 1 if the character is lowercase, 0 otherwise
+ * _abs - returns absolute value of an int
+ * @n: integer from which to get an absolute value
+ * Return: Void.
  */
-int _abs(int)
+
+int _abs(int n)
 {
-	if (n > 0)
+
+	if (n < 0)
 	{
-		_putchar('+');
-		return (1);
+		return (n * -1);
 	}
-	else if (n < 0)
-	{
-		_putchar('-');
-		return (-1);
-	}
-	else
-	{
-		_putchar('0');
-		return (0);
-	}
+	return (n);
 }
