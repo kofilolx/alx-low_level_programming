@@ -4,8 +4,7 @@
  * _isalpha - Checks if a character is a lowercase letter
  *
  * Description: This function checks whether the given character 'c'
- * is a lowercase or uppercaes letter. It returns 1 if the character is lowercase,
- * and 0 otherwise.
+ * is a lowercase or uppercaes letter.
  *
  * @c: The character to be checked
  *

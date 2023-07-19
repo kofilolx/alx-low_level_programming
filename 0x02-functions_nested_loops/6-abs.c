@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - Checks if a character is a sign of a number
- *
+ * _abs - A function the prints absolute value of an integer
  * Description: This function checks whether the given integer 'n'
  * is a sign of a number.
  * It returns 1 if the character is lowercase,and 0 otherwise.
@@ -11,7 +10,7 @@
  *
  * Return: 1 if the character is lowercase, 0 otherwise
  */
-int print_sign(int n)
+int _abs(int)
 {
 	if (n > 0)
 	{

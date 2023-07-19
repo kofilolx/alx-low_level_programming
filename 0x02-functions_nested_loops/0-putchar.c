@@ -15,7 +15,7 @@ int main(void)
 	int i = 0;
 
 	/* For loop to read array */
-	for (; i < 9; i++)
+	for (; i <= 8; i++)
 	{
 		_putchar(arr[i]);
 	}
