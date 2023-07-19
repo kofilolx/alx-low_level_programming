@@ -14,7 +14,7 @@ int main(void)
 	/*initializing first two arr values to 1 n 2*/
 	arr[0] = 1;
 	arr[1] = 2;
-	
+
 	/* Calculate fib sequence */
 	for (i = 2; i < 50; i++)
 	{
