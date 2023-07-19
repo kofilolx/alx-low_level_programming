@@ -23,7 +23,7 @@ int main(void)
 	}
 
 	/* Printing fib seq to console */
-	for (i = 0; i < 49; i++)
+	for (i = 0; i <= 49; i++)
 	{
 		printf("%ld, ", arr[i]);
 	}
