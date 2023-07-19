@@ -1,4 +1,6 @@
 #include <stdio.h>
+
+/* global variable */
 #define LARGEST 10000000000
 
 /**
