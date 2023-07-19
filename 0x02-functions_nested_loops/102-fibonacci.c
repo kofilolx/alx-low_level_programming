@@ -8,7 +8,7 @@
 int main(void)
 {
 	/* Array to hold fib sequence numbers */
-	unsigned long long arr[50];
+	unsigned long int arr[50];
 	int i;
 
 	/*initializing first two arr values to 1 n 2*/
@@ -25,7 +25,7 @@ int main(void)
 	/* Printing fib seq to console */
 	for (i = 0; i < 49; i++)
 	{
-		printf("%llu, ", arr[i]);
+		printf("%ld, ", arr[i]);
 	}
 	putchar('\n');
 	return (0);
