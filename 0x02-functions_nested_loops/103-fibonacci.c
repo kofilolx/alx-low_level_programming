@@ -8,7 +8,7 @@
 int main(void)
 {
 	unsigned long prevFib = 0, currFib = 1, nextFib;
-	unsigned long long sumEvenFib = 0;
+	unsigned long int sumEvenFib = 0;
 
 	while (currFib <= 4000000)
 	{
@@ -20,7 +20,7 @@ int main(void)
 		currFib = nextFib;
 	}
 
-	printf("%llu\n", sumEvenFib);
+	printf("%ld\n", sumEvenFib);
 
 	return (0);
 }
