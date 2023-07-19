@@ -1,15 +1,10 @@
-#include "main.h"
+i#include "main.h"
 
 /**
- * print_sign - Checks if a character is a sign of a number
+ * print_sign - Prints the sign of a number
+ * @n: The number to check
  *
- * Description: This function checks whether the given integer 'n'
- * is a sign of a number.
- * It returns 1 if the character is lowercase,and 0 otherwise.
- *
- * @c: The character to be checked
- *
- * Return: 1 if the character is lowercase, 0 otherwise
+ * Return: void
  */
 int print_sign(int n)
 {
