@@ -9,15 +9,15 @@
 void print_diagonal(int n)
 {
 	int i, tab;
+	
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
 
 	/*For loop for rows */
 	for (i = 0; i < n; i++)
 	{
-		if (n <= 0)
-		{
-			_putchar('\n');
-			break;
-		}
 		/* for loop for columns */
 		for (tab = 0; tab = i; tab++)
 		{

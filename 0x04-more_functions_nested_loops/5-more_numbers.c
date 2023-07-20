@@ -12,7 +12,7 @@ int main(void)
 	int i;
 	int j = 0;
 
-	for (i = 0; i <= 10; i++)
+	for (i = 0; i < 10; i++)
 	{
 		while (j <= 14)
 		{
@@ -21,7 +21,7 @@ int main(void)
 				_putchar(j / 10 + '0');
 			}
 				_putchar(j % 10 + '0');
-				j++;
+			j++;
 		}
 	}
 	_putchar('\n');
