@@ -6,19 +6,20 @@
  * @size : The number of lines using '#' character
  * Return: Void.
  */
-void print_square(int size)
+void print_square(int n)
 {
-	int i, j;
+	int x;
+	int y;
 
-	for (i = 0; i <= size; i++)
+	for (y = 0; y < n; y++)
 	{
-		for (j = 0; j <= size; j++)
+		for (x = 0; x < n; x++)
 		{
 			_putchar('#');
 		}
 		_putchar('\n');
 	}
-	if (size <= 0)
+	if (n <= 0)
 	{
 		_putchar('\n');
 	}
