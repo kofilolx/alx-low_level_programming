@@ -9,20 +9,20 @@
  */
 int main(void)
 {
-	int i;
-	int j = 0;
+	int i = 0;
+	int x;
 
-	for (i = 0; i < 10; i++)
+	for (x = 0; x < 10; x++)
 	{
-		while (j <= 14)
+		while (i <= 14)
 		{
-			if (j >= 10)
+			if (i >= 10)
 			{
-				_putchar(j / 10 + '0');
+				_putchar(i / 10 + '0');
 			}
-				_putchar(j % 10 + '0');
-			j++;
+				_putchar(i % 10 + '0');
+			i++;
 		}
-	}
 	_putchar('\n');
+	}
 }
