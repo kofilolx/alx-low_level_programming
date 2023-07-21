@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - Prints numbers from 0 to 14 ten times.
+ *more_numbers - Prints numbers from 0 to 14 10 times.
  *
  * Description: Uses putchar to print numbers from 0 to 14 in a loop.
  *
@@ -15,15 +15,15 @@ int more_numbers(void)
 
 	for (x = 0; x < 10; x++)
 	{
-		while (i <= 14)
+		while (i < 15)
 		{
-			if (i >= 10)
+			if (i > 10)
 			{
 				_putchar(i / 10 + '0');
 			}
-				_putchar(i % 10 + '0');
+			_putchar(i % 10 + '0');
 			i++;
 		}
-	_putchar('\n');
+		_putchar('\n');
 	}
 }
