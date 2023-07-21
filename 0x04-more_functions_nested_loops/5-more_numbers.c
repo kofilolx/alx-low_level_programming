@@ -1,29 +1,26 @@
-#include <stdio.h>
-#include "main.h"
+#include "holberton.h"
 
 /**
- *more_numbers - Prints numbers from 0 to 14 10 times.
- *
- * Description: Uses putchar to print numbers from 0 to 14 in a loop.
- *
- * Return: void
+ * more_numbers - print from 0 to 14, 10 times
+ * Description: Can only use _putchar
  */
-int more_numbers(void)
+void more_numbers(void)
 {
-	int i = 0;
-	int x;
+	int c, i;
 
-	for (x = 0; x < 10; x++)
+	c = 0;
+	while (c < 10)
 	{
+		i = 0;
 		while (i < 15)
 		{
-			if (i > 10)
-			{
+			if (i > 9)
 				_putchar(i / 10 + '0');
-			}
+
 			_putchar(i % 10 + '0');
 			i++;
 		}
+		c++;
 		_putchar('\n');
 	}
 }
