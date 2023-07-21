@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,7 +8,7 @@
  *
  * Return: void
  */
-int main(void)
+int more_numbers(void)
 {
 	int i = 0;
 	int x;
