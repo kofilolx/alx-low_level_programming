@@ -1,26 +1,29 @@
+#include "holberton.h"
 #include "main.h"
-#include <stdio.h>
-
 /**
  * print_square - Print squares based on the integer size value.
  * @size : The number of lines using '#' character
  * Return: Void.
  */
-void print_square(int n)
-{
-	int x;
-	int y;
 
-	for (y = 0; y < n; y++)
+void print_square(int size)
+{
+	int x, y;
+
+	y = 0;
+
+	if (size < 1)
+		_putchar('\n');
+
+	while (y < size)
 	{
-		for (x = 0; x < n; x++)
+		x = 0;
+		while (x < size)
 		{
 			_putchar('#');
+			x++;
 		}
 		_putchar('\n');
-	}
-	if (n <= 0)
-	{
-		_putchar('\n');
+		y++;
 	}
 }
