@@ -3,9 +3,9 @@
 /**
  * rot13 - encodes a string in rot13
  * @s: string input
- * Return: string
+ * Return: *s
  */
-char *rot13(char *)
+char *rot13(char *s)
 {
 	int i, j;
 
