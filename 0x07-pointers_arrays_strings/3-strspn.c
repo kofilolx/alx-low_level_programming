@@ -2,28 +2,33 @@
 
 /**
  * _strspn - return the length of prefix substring
- * @s: Character string to comb
- * @accept: accepted substring character
- * Return: number of repetition
+ * @s: Character string to calculate substring from
+ * @accept: accepted substring character to match
+ * Return: length of bytes
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int c;
-	char *t = accept;
+	unsigned int c, verif;
+	int i,
 
 	c = 0;
-	while (*s++)
+	while (*s)
 	{
-		while (*accept)
-			if (*(s - 1) == *(accept - 1))
+		for (i = 0; accept[i]; i++)
+		{
+			if (*s == accept[i])
 			{
 				c++;
-				break;
+				verif = 1;
 			}
-		if (!(*--accept))
-			break;
-		accept = t;
+		}
+		if (!verif)
+		{
+			return (c);
+		}
+		verif = 0;
+		s++;
 	}
 	return (c);
 }
