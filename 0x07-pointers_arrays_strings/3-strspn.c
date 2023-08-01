@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _strspn - return the length of prefix substring
  * @s: Character string to calculate substring from
