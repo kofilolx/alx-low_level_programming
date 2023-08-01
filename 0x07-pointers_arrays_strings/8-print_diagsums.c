@@ -13,8 +13,8 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		f_sum += *(a + (size * i + i));
-		l_sum += *(a + (size * i + size - 1 - i));
+		f_sum += a[i * (size + 1)];
+		l_sum += a[(i + 1) * (size - 1)];
 	}
 	printf("%d, ", f_sum);
 	printf("%d\n", l_sum);
