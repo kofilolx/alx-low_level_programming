@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ * _strlen_recursion - Calculate the length of a string using recursion.
+ * @s: The input string.
+ * Return: The length of the string.
+ */
 int _strlen_recursion(char *s)
 {
 	if (!*s)
@@ -9,7 +14,11 @@ int _strlen_recursion(char *s)
 	}
 	return (1 + _strlen_recursion(++s));
 }
-
+/**
+ * bool_type - Check if a string is a palindrome.
+ * @s: The input string.
+ * Return: 1 if the string is a palindrome, 0 otherwise.
+ */
 int bool_type(char *s, int l)
 {
 	if (l < 1)
