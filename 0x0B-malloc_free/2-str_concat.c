@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * str_concat function that concatenates two strings.
+ * str_concat - function that concatenates two strings.
  * @s1: character string input
  * @s2: character string input
  * Return: strprt pointer of an array os characters
