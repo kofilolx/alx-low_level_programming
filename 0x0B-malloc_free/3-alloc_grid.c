@@ -3,13 +3,14 @@
 
 
 /**
- * alloc_grid - returns a pointer to a 2 dimensional array of integers.
- * @width: width of the array.
- * @height: height of the array.
- * Return: pointer of an array of integers
+ * alloc_grid - function that returns a pointer to a 2 dimensional array of integers.
+ * @width: width | col
+ * @height: height | rows
+ * Return: point to a 2d array of integers
  */
 int **alloc_grid(int width, int height)
-{int **output, i, j;
+{
+	int **output, i, j;
 
 	if (width < 1 || height < 1)
 		return (NULL);
