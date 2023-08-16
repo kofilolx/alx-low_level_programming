@@ -2,32 +2,19 @@
 #include "dog.h"
 
 /**
- * _strcpy - copy a string
- * @s: string to copy
- * Return: pointer to string copy
+ * _strcpy - string copy prototype
+ * @s: string character input
+ * Return: pointer
  */
-char *_strcpy(char *s)
-{
-	int i;
-	char *ptr;
+char *_strcpy(char *s);
 
-	for (i = 0; s[i]; i++)
-		;
-	ptr = malloc(i + 1);
-	if (ptr)
-	{
-		for (; i >= 0; i--)
-			ptr[i] = s[i];
-	}
-	return (ptr);
-}
 
 /**
  * new_dog - creates a new profile for dog struct
  * @name: Name of dog
  * @age: Age of dog
  * @owner: Owner of dog
- * Return: dog struct or NULL
+ * Return: pt pointer
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -51,4 +38,25 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	return (pt);
+}
+
+/**
+ * _strcpy - string copy
+ * @s: string to copy
+ * Return: pointer to string copy
+ */
+char *_strcpy(char *s)
+{
+	int i;
+	char *ptr;
+
+	for (i = 0; s[i]; i++)
+		;
+	ptr = malloc(i + 1);
+	if (ptr)
+	{
+		for (; i >= 0; i--)
+			ptr[i] = s[i];
+	}
+	return (ptr);
 }
