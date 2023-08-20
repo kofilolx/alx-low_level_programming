@@ -9,50 +9,45 @@
  */
 void print_all(const char * const format, ...)
 {
-        /* varaible initialization */
-        va_list args;
-        unsigned int i;
-        char c_arg;
-        int i_arg;
-        float f_arg;
-        char *s_arg;
+	int i;
+	char *ptr, *put_sep = "";
+	va_list d_args;
+	char c_arg;
+	int i_arg;
+	float f_arg;
 
-        va_start(args, format);
 
-        i = 0;
-        while (format && format[i])
-        {
-                switch (format[i])
-                {
-                        case 'c':
-                                c_arg = va_arg(args, int);
-                                printf("%c", c_arg);
-                                break;
-                        case 'i':
-                                i_arg = va_arg(args, int);
-                                printf("%d", i_arg);
-                                break;
-                        case 'f':
-                                f_arg = va_arg(args, double);
-                                printf("%f", f_arg);
-                                break;
-                        case 's':
-                                s_arg = va_arg(args, char *);
-                                if (s_arg != NULL)
-                                        printf("%s", s_arg);
-                                else
-                                        printf("(nil)");
-                                break;
-                        default:
-                                break;
-                }
-
-                if (format[i + 1])
-                        printf(", ");
-                i++;
-        }
-
-        va_end(args);
-
-        printf("\n");
+	va_start(d_args, format);
+	i = 0;
+	while (format && format[i])
+	{
+		switch (format[i])
+		{
+			case 'c':
+				c_arg = va_arg(d_args, int);
+				printf("%s%c", put_sep, c_arg);
+				break;
+			case 'i':
+				i_arg = va_arg(d_args, int);
+				printf("%s%d", put_sep, i_arg);
+				break;
+			case 'f':
+				f_arg = va_arg(d_args, double);
+				printf("%s%f", put_sep, f_arg);
+				break;
+			case 's':
+				ptr = va_arg(d_args, char *);
+				if (!ptr)
+					ptr = "(nil)";
+				printf("%s%s", put_sep, ptr);
+				break;
+			default:
+				i++;
+				continue;
+		}
+		put_sep = ", ";
+		i++;
+	}
+	printf("\n");
+	va_end(d_args);
 }
