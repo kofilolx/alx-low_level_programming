@@ -2,9 +2,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * print_strings - prints strings & new line at the end
- * @separator: character string
- * @n: number of args
+ * print_all - prints strings & new line at the end
+ * @format: specifiers
  * Return: void
  */
 void print_all(const char * const format, ...)
@@ -15,7 +14,6 @@ void print_all(const char * const format, ...)
 	char c_arg;
 	int i_arg;
 	float f_arg;
-
 
 	va_start(d_args, format);
 	i = 0;
@@ -48,6 +46,6 @@ void print_all(const char * const format, ...)
 		put_sep = ", ";
 		i++;
 	}
-	printf("\n");
 	va_end(d_args);
+	printf("\n");
 }
