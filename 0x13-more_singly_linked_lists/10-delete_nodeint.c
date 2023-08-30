@@ -1,16 +1,16 @@
 #include "lists.h"
+
 /**
- * delete_nodeint_at_index - deletes positional data
+ * delete_nodeint_at_index - deletes the node by index
  * @head : pointer to the head of the list
- * @index: index of the data to be deleted
- * Return: 1 Success
+ * @index: index of the node to be deleted
+ * Return: 1 success,
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *tmp;
-	listint_t *copy = *head;
-	unsigned int data;
+	listint_t *tmp, *copy = *head;
+	unsigned int itr_node = 0;
 
 	if (copy == NULL)
 		return (-1);
@@ -22,7 +22,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		return (1);
 	}
 
-	for (data = 0; data < (index - 1); data++)
+	for (; itr_node < (index - 1); itr_node++)
 	{
 		if (copy->next == NULL)
 			return (-1);
@@ -34,3 +34,4 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	free(tmp);
 	return (1);
 }
+
