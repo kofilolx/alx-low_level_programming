@@ -21,3 +21,4 @@ N<<1 = 20 [0001 0100]
 R-Shift
 N = 10 [0000 1010]
 N >> 1 = 5 [0000 0101]
+Bit manipulation can be used to optimize code, particularly in systems programming or low-level programming for graphics programming, cryptography,  embedded systems
