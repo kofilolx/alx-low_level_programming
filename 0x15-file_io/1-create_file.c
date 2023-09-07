@@ -9,12 +9,12 @@
 
 int create_file(const char *filename, char *text_content)
 {
-        int f_loc, rd, wr = 0;
+        int fd, rd, wr = 0;
 
         if (!filename)
                 return (-1);
         f_loc = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-        if (f_loc < 0)
+        if (fd < 0)
         {
                 return (-1);
         }
@@ -24,11 +24,10 @@ int create_file(const char *filename, char *text_content)
                 {
                         rd++;
                 }
-                wr = write(f_loc, text_content, rd);
+                wr = write(fd, text_content, rd);
                 if (wr != rd)
                         return (-1);
         }
-        close(f_loc);
+	close(fd);
         return (1);
 }
-
