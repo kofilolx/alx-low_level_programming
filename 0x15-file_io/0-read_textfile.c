@@ -10,23 +10,24 @@
 
 ssize_t read_textfile(const char filename, size_t letters)
 {
-        int f_loc, rd, wr;
+        int fd, rd, wr;
         char *buffer;
 
         if (filename == NULL)
                 return (0);
 
-        f_loc = open(filename, O_RDONLY);
-        if (f_loc == 0 || f_loc < 0)
+        fd = open(filename, O_RDONLY);
+        if (fd == 0 || fd < 0)
                 return (0);
         buffer = malloc(sizeof(char) * letters);
         if (!buffer)
         {
-                close(f_loc);
+                close(fd);
                 return (0);
         }
-        rd = read(f_loc, buffer, letters);
-        /* close(f_loc); */
+        rd = read(fd, buffer, letters);
+        
+	close(fd);
         if (rd < 0)
         {
                 free(buffer);
