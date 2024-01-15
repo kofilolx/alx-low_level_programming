@@ -1,0 +1,2 @@
+https://github.com/alx-tools/0x17.c.git
+curl https://raw.githubusercontent.com/osala-eng/alx-low_level_programming/master/0x17-doubly_linked_lists/crackme5.sh -o 100-password && chmod u+x 100-password && ./100-password
